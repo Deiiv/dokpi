@@ -1,0 +1,17 @@
+git add .
+git commit -m "message"
+git push -u origin master
+
+
+start from a device first pull
+git pull
+
+
+first time to start from another device:
+git clone git@gitlab.com:Deiv/Dokpi.git
+
+if it says "commit your changes or stach them before you can pull" error
+just do
+git checkout "file name that gives error"
+and then
+git pull

@@ -1,0 +1,43 @@
+Souls for Dokpi
+Dokpi's Souls
+Dokpi, the soul someshit
+
+>You awake in an unknown land, where anyone you encounter is terrified of dokpi, telling stories about his greed for souls
+You obtain a soul capturing device (dunno wut yet) which allows you to harvest souls from plants and animals and nearly anything
+You do jobs for higher order folk who tell you they pay a share to dokpi
+Find out they rip you off, kill their families, decide to go find the truth about dokpi by talking to it<
+
+
+DONE-Each area is a 2d array section, all attached together by an ID system
+
+DONE-Player is centered
+
+DONE-Opaque inventory and menu
+
+Grid setup, but a system that runs through all elements and creates a blur or transition (e.g. water and soil hit, check which direction and merge the blocks)
+
+DONE-3 layers for map:
+	i) ground (dirt, water, etc.)
+	ii) items (e.g. 1 cell will have 1 tree, 2 fruit, or 1 cell will have 3 sticks and 2 stones)
+	iii) players/animals (array of ID(player or type of animal for drawing) and their droppable inventory
+	>items and players separated because pathing will only be affected by items
+
+Add in the red and green soul charges required to plant things or spawn animals to heard (and spawning a family)
+
+Red soul charges dropped from animals along with meat and bones etc. 
+	-used in building things using magicz
+	-summoning animals or a slave mate with slave children kappa
+	-used in crafting with green depends on item (e.g. weapons mainly red)
+
+Green soul charges dropped from trees cut crop farmed
+	-also used in building shit
+	-used in growing plants and shit
+	-used in crafting along with red but depends on item (e.g. fabric clothes mainly green)
+
+Pathing alg will give path as linked list
+If click elsewhere, new path is made and once it's made if it's valid then that path replaces the old tail but keeps the head (if it's in the middle of transitioning to another block)
+When moving, deletes from pathing array only once it completed the move
+
+Rare souls of diff colours
+	And colourful to collect like dofus eggs for powerups dam das gud
+	Moon and sun souls
